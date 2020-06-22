@@ -1,0 +1,25 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sim_1/new/testbench.v,1592793020,verilog,,,,testbench1,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/ip/data_ram/sim/data_ram.v,1592634325,verilog,,D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/ip/inst_ram/sim/inst_ram.v,,data_ram,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/ip/inst_ram/sim/inst_ram.v,1592795630,verilog,,D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/alu.v,,inst_ram,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/alu.v,1592635749,verilog,,D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/aludec.v,,alu,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/aludec.v,1592576092,verilog,,D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/controller.v,,aludec,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/controller.v,1592726256,verilog,,D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/datapath.v,,controller,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/datapath.v,1592798665,verilog,,D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/flopenr.v,,datapath,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/flopenr.v,1592756123,verilog,,D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/flopenrc.v,,flopenr,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/flopenrc.v,1592710686,verilog,,D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/floprc.v,,flopenrc,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/floprc.v,1592666742,verilog,,D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/hazard.v,,floprc,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/hazard.v,1592788724,verilog,,D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/maindec.v,,hazard,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/maindec.v,1592633125,verilog,,D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/mips.v,,main_decoder,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/mips.v,1592798178,verilog,,D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/mux2.v,,mips,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/mux2.v,1592793869,verilog,,D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/mux3.v,,mux2,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/mux3.v,1592709918,verilog,,D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/pc_adder.v,,mux3,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/pc_adder.v,1592632728,verilog,,D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/regfile.v,,adder,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/regfile.v,1592791934,verilog,,D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/signext.v,,regfile,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/signext.v,1592619875,verilog,,D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/sl2.v,,signext,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/sl2.v,1592619812,verilog,,D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/top.v,,sl2,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sources_1/new/top.v,1592792987,verilog,,D:/Software/Vivado/projects/Computer_Organization/exp4/exp4.srcs/sim_1/new/testbench.v,,top,,,,,,,,

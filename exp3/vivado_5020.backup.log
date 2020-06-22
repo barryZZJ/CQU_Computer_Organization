@@ -1,0 +1,2456 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jun 20 00:33:59 2020
+# Process ID: 5020
+# Current directory: D:/Software/Vivado/projects/Computer_Organization/exp3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13764 D:\Software\Vivado\projects\Computer_Organization\exp3\exp3.xpr
+# Log file: D:/Software/Vivado/projects/Computer_Organization/exp3/vivado.log
+# Journal file: D:/Software/Vivado/projects/Computer_Organization/exp3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Software/Vivado/projects/Computer_Organization/exp3/exp3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 933.355 ; gain = 83.266
+close_project
+open_project D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 943.938 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 00000000, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b000
+instruction:32'h 00000000, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b000
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+$stop called at time : 75 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 943.938 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 00000000, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b000
+instruction:32'h 00000000, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b000
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+$stop called at time : 82 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 943.938 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:39]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 00000000, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b000
+instruction:32'h 20020005, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:0,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+$stop called at time : 75 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 943.938 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 00000000, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b000
+instruction:32'h 00000000, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b000
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+$stop called at time : 75 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 943.938 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 00000000, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b000
+instruction:32'h 00000000, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b000
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+$stop called at time : 75 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 943.938 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 00000000, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b000
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+instruction:32'h 08000013, jump:1,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+$stop called at time : 75 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 943.938 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 00000000, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b000
+instruction:32'h 00000000, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b000
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+$stop called at time : 75 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 958.234 ; gain = 14.297
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:39]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 00000000, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b000
+instruction:32'h 20020005, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:0,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+$stop called at time : 75 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 960.063 ; gain = 1.172
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:39]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 00000000, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b000
+instruction:32'h 20020005, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:0,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+$stop called at time : 75 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 960.063 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:39]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 20020005, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:0,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+instruction:32'h 08000013, jump:1,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+$stop called at time : 86 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 960.867 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:39]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 20020005, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:0,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+instruction:32'h 08000013, jump:1,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+$stop called at time : 76 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 960.867 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:39]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 20020005, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:0,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+instruction:32'h 08000013, jump:1,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+$stop called at time : 75 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 963.266 ; gain = 2.398
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'pc' is not allowed [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:18]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 20020005, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:0,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+instruction:32'h 08000013, jump:1,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+$stop called at time : 75 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 44
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 964.746 ; gain = 1.480
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Software/Vivado/projects/Computer_Organization/exp2/inst_ram.coe' provided. It will be converted relative to IP Instance files '../../../../../exp2/inst_ram.coe'
+set_property -dict [list CONFIG.Coe_File {d:/Software/Vivado/projects/Computer_Organization/exp2/inst_ram.coe}] [get_ips mem]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Software/Vivado/projects/Computer_Organization/exp2/inst_ram.coe' provided. It will be converted relative to IP Instance files '../../../../inst_ram.coe'
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'pc' is not allowed [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:18]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:41]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'addra' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:42]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+$stop called at time : 75 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 44
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 999.289 ; gain = 0.000
+close_sim
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Simtcl 6-16] Simulation closed
+INFO: [Common 17-344] 'close_sim' was cancelled
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'pc' is not allowed [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:18]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'pc' is not allowed [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:18]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:41]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'addra' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:42]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+$stop called at time : 85 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 45
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1081.727 ; gain = 0.449
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:41]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'addra' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:42]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+$stop called at time : 85 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 45
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1085.500 ; gain = 2.121
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'pc' is not allowed [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:18]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 20020005, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:0,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+instruction:32'h 08000013, jump:1,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+$stop called at time : 85 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 45
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1086.375 ; gain = 0.527
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'pc' is not allowed [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:18]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 20020005, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:0,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+instruction:32'h 08000013, jump:1,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+$stop called at time : 85 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 45
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1089.805 ; gain = 3.383
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'pc' is not allowed [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:18]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 00000000, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b000
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+instruction:32'h 08000013, jump:1,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+$stop called at time : 85 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 45
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1098.340 ; gain = 4.945
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'pc' is not allowed [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:18]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 00000000, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b000
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+instruction:32'h 08000013, jump:1,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+$stop called at time : 75 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 44
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1098.340 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'pc' is not allowed [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:18]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 20020005, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:0,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+instruction:32'h 08000013, jump:1,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+$stop called at time : 75 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 44
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1098.340 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'pc' is not allowed [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:18]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 00000000, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b000
+instruction:32'h 20020005, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:0,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+$stop called at time : 75 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 44
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1098.340 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 00000000, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b000
+instruction:32'h 20020005, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:0,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+$stop called at time : 75 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1098.340 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 20020005, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:0,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+instruction:32'h 08000013, jump:1,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+$stop called at time : 95 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1098.340 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/2019.1/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simtop' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simtop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/ip/mem/sim/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/pc_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simtop
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+"xelab -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/2019.1/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0cae5662958948c98327eb5076d663d0 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simtop_behav xil_defaultlib.simtop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sources_1/new/top.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_module
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.simtop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simtop_behav -key {Behavioral:sim_1:Functional:simtop} -tclbatch {simtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 20020005, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:0,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+instruction:32'h 08000013, jump:1,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+$stop called at time : 85 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1098.340 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sat Jun 20 09:50:43 2020] Launched synth_1...
+Run output will be captured here: D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.runs/synth_1/runme.log
+[Sat Jun 20 09:50:43 2020] Launched impl_1...
+Run output will be captured here: D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1123.566 ; gain = 1.848
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292708874A
+set_property PROGRAM.FILE {D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.runs/impl_1/top_for_board.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.runs/impl_1/top_for_board.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292708874A
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 20 09:55:11 2020...

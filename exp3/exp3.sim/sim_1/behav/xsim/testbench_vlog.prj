@@ -1,0 +1,24 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../exp3.srcs/sources_1/ip/data_ram/sim/data_ram.v" \
+"../../../../exp3.srcs/sources_1/ip/inst_ram/sim/inst_ram.v" \
+"../../../../exp3.srcs/sources_1/new/alu.v" \
+"../../../../exp3.srcs/sources_1/new/aludec.v" \
+"../../../../exp3.srcs/sources_1/new/controller.v" \
+"../../../../exp3.srcs/sources_1/new/datapath.v" \
+"../../../../exp3.srcs/sources_1/new/maindec.v" \
+"../../../../exp3.srcs/sources_1/new/mips.v" \
+"../../../../exp3.srcs/sources_1/new/mux2.v" \
+"../../../../exp3.srcs/sources_1/new/pc.v" \
+"../../../../exp3.srcs/sources_1/new/pc_adder.v" \
+"../../../../exp3.srcs/sources_1/new/regfile.v" \
+"../../../../exp3.srcs/sources_1/new/signext.v" \
+"../../../../exp3.srcs/sources_1/new/sl2.v" \
+"../../../../exp3.srcs/sources_1/new/top.v" \
+"../../../../exp3.srcs/sim_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

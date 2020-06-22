@@ -1,0 +1,107 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jun 20 00:33:59 2020
+# Process ID: 5020
+# Current directory: D:/Software/Vivado/projects/Computer_Organization/exp3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13764 D:\Software\Vivado\projects\Computer_Organization\exp3\exp3.xpr
+# Log file: D:/Software/Vivado/projects/Computer_Organization/exp3/vivado.log
+# Journal file: D:/Software/Vivado/projects/Computer_Organization/exp3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Software/Vivado/projects/Computer_Organization/exp3/exp3.xpr
+close_project
+open_project D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+set_property -dict [list CONFIG.Coe_File {d:/Software/Vivado/projects/Computer_Organization/exp2/inst_ram.coe}] [get_ips mem]
+close_sim
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+close_sim
+launch_simulation
+source simtop.tcl
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.runs/impl_1/top_for_board.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.runs/impl_1/top_for_board.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim

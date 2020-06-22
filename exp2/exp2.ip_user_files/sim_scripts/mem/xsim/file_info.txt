@@ -1,0 +1,2 @@
+mem.v,verilog,xil_defaultlib,../../../../exp2.srcs/sources_1/ip/mem/sim/mem.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

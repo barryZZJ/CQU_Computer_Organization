@@ -1,0 +1,9 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/Software/Vivado/projects/Computer_Organization/exp1/exp1.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp1/exp1.srcs/sim_1/new/sim.v,1587875173,verilog,,,,sim,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp1/exp1.srcs/sim_1/new/sim2.v,1590916739,verilog,,,,sim2,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp1/exp1.srcs/sources_1/new/alu.v,1587875477,verilog,,D:/Software/Vivado/projects/Computer_Organization/exp1/exp1.srcs/sim_1/new/sim.v,,alu,,,,,,,,
+D:/Software/Vivado/projects/Computer_Organization/exp1/exp1.srcs/sources_1/new/stallable_pipeline_adder.v,1590911921,verilog,,D:/Software/Vivado/projects/Computer_Organization/exp1/exp1.srcs/sim_1/new/sim2.v,,stallable_pipeline_adder,,,,,,,,

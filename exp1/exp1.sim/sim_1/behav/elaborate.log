@@ -1,0 +1,16 @@
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto e5c5e90a3d444df5bcbe14b943a5fac5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim2_behav xil_defaultlib.sim2 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/Software/Vivado/projects/Computer_Organization/exp1/exp1.srcs/sources_1/new/stallable_pipeline_adder.v" Line 2. Module stallable_pipeline_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Software/Vivado/projects/Computer_Organization/exp1/exp1.srcs/sources_1/new/stallable_pipeline_adder.v" Line 2. Module stallable_pipeline_adder doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.stallable_pipeline_adder
+Compiling module xil_defaultlib.sim2
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot sim2_behav

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sun Apr 26 12:19:39 2020
+# Process ID: 10024
+# Log file: D:/Software/Vivado/projects/Computer_Organization/exp1/exp1.runs/impl_1/alu.vdi
+# Journal file: D:/Software/Vivado/projects/Computer_Organization/exp1/exp1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source alu.tcl -notrace

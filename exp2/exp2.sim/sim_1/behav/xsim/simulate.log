@@ -1,0 +1,12 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module simtop.top.mem.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+instruction:32'h 20020005, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:0,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h 00a42820, jump:0,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:1,regdst:1,alucontrol:3'b010
+instruction:32'h 8c020050, jump:0,branch:0,alusrc:1,memwrite:0,memtoreg:1,regwirte:1,regdst:0,alucontrol:3'b010
+instruction:32'h ac020054, jump:0,branch:0,alusrc:1,memwrite:1,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+instruction:32'h 10a7000c, jump:0,branch:1,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b110
+instruction:32'h 08000013, jump:1,branch:0,alusrc:0,memwrite:0,memtoreg:0,regwirte:0,regdst:0,alucontrol:3'b010
+$stop called at time : 85 ns : File "D:/Software/Vivado/projects/Computer_Organization/exp2/exp2.srcs/sim_1/new/simtop.v" Line 42
